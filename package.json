@@ -1,0 +1,34 @@
+{
+  "name": "@volpe/result",
+  "version": "0.0.1",
+  "description": "Result",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "bun --watch src",
+    "test": "bun test",
+    "build": "tsc",
+    "pub": "bun run build && npm publish --access public"
+  },
+  "keywords": ["result"],
+  "author": "volpe",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "5"
+  },
+  "peerDependencies": {
+    "axios": "1.12.2"
+  }
+}
